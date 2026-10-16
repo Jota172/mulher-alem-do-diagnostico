@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A mulher além do diagnóstico</title>
+<style>
+:root{--bg:#f7efe6;--card:#fffaf4;--ink:#3d2b26;--soft:#7a625a;--rose:#a8586a;--rose-d:#8a4356;--line:#e6d6c6;--earth:#c9a27e;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241a18;--card:#2f2321;--ink:#f3e7dc;--soft:#c3ada1;--rose:#d98a9c;--rose-d:#e8a3b3;--line:#4a3935;--earth:#b08a68;--on:#2a1a1e}}
+:root[data-theme="dark"]{--bg:#241a18;--card:#2f2321;--ink:#f3e7dc;--soft:#c3ada1;--rose:#d98a9c;--rose-d:#e8a3b3;--line:#4a3935;--earth:#b08a68;--on:#2a1a1e}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 Georgia,"Times New Roman",serif;padding-bottom:96px}
+h1,h2,h3,summary,button,.chip,.btn{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:32px 20px 24px;background:linear-gradient(160deg,#c98a8f,#a8586a);color:#fff;border-radius:0 0 28px 28px}
+header h1{margin:0 0 10px;font-size:28px;line-height:1.2}
+header p{margin:0;font-size:18px;opacity:.95}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:8px;overflow-x:auto;padding:10px 16px;border-bottom:1px solid var(--line)}
+.chip{flex:none;padding:10px 16px;border-radius:99px;background:var(--card);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:15px;min-height:44px;display:flex;align-items:center}
+main{padding:8px 16px;max-width:680px;margin:0 auto}
+section{margin:28px 0}
+h2{font-size:22px;margin:0 0 6px;color:var(--rose-d)}
+.lead{color:var(--soft);margin:0 0 14px;font-size:17px}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:10px 0;overflow:hidden}
+summary{cursor:pointer;padding:16px 18px;min-height:56px;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;color:var(--rose);flex:none}
+details[open] summary::after{content:"–"}
+.body{padding:0 18px 16px}
+.body p{margin:0 0 10px}.body ul,.body ol{margin:0 0 10px;padding-left:22px}.body li{margin-bottom:6px}
+.note{background:rgba(201,162,126,.18);border-left:4px solid var(--earth);padding:10px 14px;border-radius:8px;font-size:16px;margin-top:8px}
+.check label{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:17px}
+.check input{width:26px;height:26px;flex:none;accent-color:var(--rose)}
+.org{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin:12px 0}
+.org h3{margin:0 0 6px;font-size:19px}
+.org p{margin:0 0 12px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;border-radius:14px;background:var(--rose);color:var(--on);font-weight:700;font-size:18px;text-decoration:none;margin-top:8px;border:0;width:100%}
+.btn.alt{background:transparent;color:var(--rose-d);border:2px solid var(--rose)}
+footer{padding:8px 20px 24px;text-align:center;color:var(--soft);font-size:15px}
+.fix{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);z-index:9}
+dialog{border:0;border-radius:20px;background:var(--card);color:var(--ink);max-width:420px;width:calc(100% - 32px);padding:22px;font-size:17px}
+dialog::backdrop{background:rgba(0,0,0,.5)}
+dialog h3{margin:0 0 10px;color:var(--rose-d)}
+</style>
+</head>
+<body>
+<header>
+<h1>A mulher além do diagnóstico</h1>
+<p>Você é muito mais do que o tratamento. Este guia reúne, num só lugar, informações práticas sobre seus direitos, seu corpo, sua autoestima e quem pode te ajudar aqui em Caxias do Sul. Consulte no seu tempo, do jeito que precisar.</p>
+</header>
+<nav aria-label="Seções">
+<a class="chip" href="#direitos">Direitos</a><a class="chip" href="#nutricao">Alimentação</a><a class="chip" href="#autoestima">Autoestima</a><a class="chip" href="#reabilitacao">Corpo e mente</a><a class="chip" href="#rede">Ligar para quem ajuda</a>
+</nav>
+<main>
+
+<section id="direitos">
+<h2>1. Seus direitos</h2>
+<p class="lead">Toque em cada item para ver como pedir. As regras podem mudar, então confirme sempre no órgão ou com a assistente social do seu hospital.</p>
+
+<details><summary>Saque do FGTS e do PIS/PASEP</summary><div class="body">
+<p>O diagnóstico de câncer permite sacar o FGTS, mesmo sem ter sido demitida. Vale também se o câncer for de um dependente seu.</p>
+<ol><li>Peça ao seu médico um atestado com o diagnóstico (CID) e a indicação do tratamento.</li><li>Leve o atestado e seus documentos a uma agência da Caixa.</li><li>Para o PIS, o saque também é na Caixa. Para o PASEP, no Banco do Brasil.</li></ol>
+<div class="note">Dúvidas sobre valores e saldo: ligue 0800 726 0207 (Caixa).</div></div></details>
+
+<details><summary>Auxílio por incapacidade (auxílio-doença)</summary><div class="body">
+<p>Se você precisa se afastar do trabalho, o INSS paga o benefício a partir do 16º dia de afastamento (nos primeiros 15 dias, quem paga é a empresa). Para câncer, não é preciso ter 12 meses de contribuição, mas é preciso estar com a contribuição em dia ou dentro do "período de graça".</p>
+<ol><li>Agende a perícia pelo aplicativo ou site Meu INSS, ou pelo telefone 135.</li><li>Leve laudos, exames e receitas atualizados.</li><li>Guarde o protocolo. Se negarem, você pode pedir recurso.</li></ol></div></details>
+
+<details><summary>Aposentadoria por incapacidade permanente</summary><div class="body">
+<p>Se o tratamento ou as sequelas impedem você de voltar a trabalhar, o INSS pode converter o auxílio em aposentadoria. A perícia faz essa avaliação. Também para câncer não há exigência de tempo mínimo de contribuição.</p>
+<p>Se você precisar de ajuda permanente de outra pessoa para tarefas do dia a dia, o valor pode ter acréscimo de 25%.</p></div></details>
+
+<details><summary>Isenção de impostos (IR e IPVA)</summary><div class="body">
+<p><b>Imposto de Renda:</b> quem tem câncer e recebe aposentadoria, pensão ou reforma pode ficar isenta de IR sobre esse valor.</p>
+<ol><li>Peça um laudo pericial a um serviço médico oficial (federal, estadual ou municipal).</li><li>Entregue o laudo ao órgão que paga o seu benefício (INSS ou instituto de previdência).</li></ol>
+<p><b>IPVA:</b> a isenção depende da lei de cada estado. No Rio Grande do Sul, ela costuma ser ligada à condição de pessoa com deficiência, e nem todo caso de câncer se enquadra. Pergunte na Receita Estadual ou no Detran antes de dar entrada.</p></div></details>
+
+<details><summary>Tratamento e reconstrução da mama (SUS e planos)</summary><div class="body">
+<ul><li><b>Prazo no SUS:</b> o tratamento deve começar em até 60 dias depois do diagnóstico registrado.</li><li><b>Reconstrução:</b> a cirurgia reparadora da mama é um direito, no SUS e nos planos de saúde. Quando há condição clínica, ela pode ser feita na mesma cirurgia da retirada.</li><li><b>Plano de saúde:</b> inclui também ajuste da outra mama para manter a simetria.</li></ul>
+<div class="note">Plano negou algo? Peça a negativa por escrito e registre reclamação na ANS: 0800 701 9656.</div></div></details>
+
+<details open><summary>Checklist: documentos básicos para separar</summary><div class="body check" id="chk">
+<p>Marque o que você já tem. Fica salvo neste celular.</p>
+<label><input type="checkbox"> RG, CPF e comprovante de endereço</label>
+<label><input type="checkbox"> Carteira de trabalho e número do PIS/NIS</label>
+<label><input type="checkbox"> Laudos médicos com CID e exames recentes</label>
+<label><input type="checkbox"> Atestado médico atualizado</label>
+<label><input type="checkbox"> Cartão do SUS e carteirinha do plano</label>
+<label><input type="checkbox"> Extrato do FGTS e do INSS (Meu INSS)</label>
+<label><input type="checkbox"> Comprovantes de renda e de gastos com o tratamento</label>
+</div></details>
+</section>
+
+<section id="nutricao">
+<h2>2. Alimentação e bem-estar</h2>
+<p class="lead">Cada corpo reage de um jeito. Se algo piorar ou você perder peso sem querer, avise a equipe e peça uma consulta com nutricionista.</p>
+<details><summary>Quando o enjoo aperta</summary><div class="body"><ul><li>Coma pouco e várias vezes ao dia, em vez de refeições grandes.</li><li>Prefira comida seca e fria ou morna: torrada, biscoito de água e sal, arroz, batata cozida.</li><li>Evite frituras e cheiros fortes. Se o cheiro da cozinha incomoda, peça para alguém preparar.</li><li>Tome líquidos aos golinhos, longe das refeições. Gelo, picolé de fruta e gengibre ajudam algumas pessoas.</li><li>Fique sentada ou recostada por uma hora depois de comer.</li></ul></div></details>
+<details><summary>Quando o paladar muda</summary><div class="body"><ul><li>Gosto metálico: use talheres de plástico ou bambu e prefira carnes brancas, ovos e leguminosas.</li><li>Tudo com gosto de nada: use ervas, limão, cebola e alho para dar sabor.</li><li>Sabor doce demais ou amargo: um pouco de sal ou de suco cítrico equilibra.</li><li>Boca seca ou com feridas: alimentos macios e úmidos, enxágue com água e bicarbonato, e avise a equipe.</li></ul></div></details>
+<details><summary>Para ter mais disposição e defesa</summary><div class="body"><ul><li>Proteína em toda refeição: ovo, frango, peixe, feijão, lentilha, iogurte.</li><li>Frutas, legumes e verduras bem lavados ou cozidos.</li><li>Água ao longo do dia, mesmo sem sede.</li><li>Alimentos integrais, castanhas e azeite para ter energia.</li></ul>
+<div class="note">Durante a quimioterapia, evite alimentos crus de origem duvidosa, ovos mal cozidos e suplementos por conta própria. Pergunte antes ao oncologista.</div></div></details>
+</section>
+
+<section id="autoestima">
+<h2>3. Autoestima e cuidados</h2>
+<p class="lead">Cuidar da aparência não é vaidade. É uma forma de se reconhecer no espelho.</p>
+<details><summary>Pele e unhas</summary><div class="body"><ul><li>Hidratante sem perfume todos os dias, principalmente depois do banho.</li><li>Banho morno, não quente, com sabonete suave.</li><li>Protetor solar FPS 30 ou mais, todo dia, e chapéu quando sair. A pele fica mais sensível.</li><li>Unhas curtas e limpas. Evite cortar cutículas e use luvas para lavar louça.</li><li>Esmalte hipoalergênico é permitido, mas tire se a unha soltar ou doer. Avise a equipe se houver dor ou vermelhidão.</li><li>Em radioterapia, siga as orientações da equipe para a pele da área tratada.</li></ul></div></details>
+<details><summary>Lenços, perucas e couro cabeludo</summary><div class="body"><ul><li>Lenços de algodão ou malha são mais confortáveis e não escorregam. Teste amarrações diferentes.</li><li>Antes de a queda começar, muitas mulheres preferem raspar o cabelo, para viver isso do seu jeito.</li><li>Para peruca, prove com calma e escolha uma cor parecida com a sua. Procure também opções de empréstimo (veja a Liga Feminina, no fim deste guia).</li><li>Couro cabeludo: hidrate, proteja do sol e durma com fronha de cetim ou algodão.</li></ul></div></details>
+<details><summary>Olhar para você com carinho</summary><div class="body"><p>Seu corpo está fazendo um trabalho enorme. Alguns dias você vai se achar abatida, e tudo bem. Pequenos gestos ajudam: um batom, um brinco, uma roupa que você gosta, uma foto sua de hoje.</p><p>Aceitar ajuda de amigas para passear, arrumar o cabelo ou só conversar também é cuidado.</p></div></details>
+</section>
+
+<section id="reabilitacao">
+<h2>4. Corpo e mente</h2>
+<details><summary>Mobilidade do braço e do ombro</summary><div class="body"><p>Depois da cirurgia, o braço pode ficar rígido ou inchado. A fisioterapia ajuda a recuperar o movimento e a prevenir o linfedema. Peça indicação ao seu médico.</p><ul><li>Só comece os exercícios quando a equipe liberar.</li><li>Movimentos suaves: subir os braços devagar na parede (como "escalar" com os dedos) e girar os ombros.</li><li>Pare se sentir dor forte ou notar inchaço, calor ou vermelhidão.</li><li>Evite carregar peso e tirar sangue ou medir pressão no braço operado, se for orientação sua equipe.</li></ul></div></details>
+<details><summary>Escuta e apoio psicológico</summary><div class="body"><p>Medo, raiva, tristeza e cansaço são comuns durante o tratamento. Falar com alguém que escuta sem julgar alivia.</p><ul><li>Peça ao seu hospital ou posto de saúde um encaminhamento para psicólogo.</li><li>A AAPECAN oferece apoio psicológico (contato no fim do guia).</li><li>Para familiares: escutar sem dar conselho, perguntar "como você está hoje?" e ficar por perto já faz muita diferença.</li></ul>
+<div class="note">Se estiver muito difícil, ligue para o CVV, 188, 24 horas, gratuito.</div></div></details>
+</section>
+
+<section id="rede">
+<h2>5. Rede de apoio em Caxias do Sul</h2>
+<p class="lead">Você não precisa resolver tudo sozinha. Toque para ligar.</p>
+<div class="org"><h3>AAPECAN</h3><p>Associação de Apoio a Pessoas com Câncer. Acolhimento, apoio psicológico, jurídico e assistencial.</p>
+<a class="btn" href="tel:+555430269546">Ligar agora: (54) 3026-9546</a>
+<a class="btn alt" href="https://wa.me/555430269546">Chamar no WhatsApp</a></div>
+<div class="org"><h3>Liga Feminina de Combate ao Câncer</h3><p>Apoio com medicamentos, exames, lenços e amparo emocional.</p>
+<a class="btn" href="tel:+5554996752565">Ligar agora: (54) 99675-2565</a></div>
+</section>
+</main>
+<footer>Este guia traz informações gerais e não substitui a orientação da sua equipe de saúde.</footer>
+
+<div class="fix"><button class="btn" id="fav" type="button">★ Salvar este guia nos favoritos do celular</button></div>
+<dialog id="dlg"><h3>Guardar este guia</h3>
+<p><b>iPhone (Safari):</b> toque em Compartilhar e escolha "Adicionar à Tela de Início".</p>
+<p><b>Android (Chrome):</b> toque nos três pontinhos e escolha "Adicionar à tela inicial" ou a estrela de favoritos.</p>
+<button class="btn" type="button" id="ok">Entendi</button></dialog>
+<script>
+(function(){
+var d=document.getElementById('dlg');
+document.getElementById('fav').onclick=function(){try{d.showModal()}catch(e){d.setAttribute('open','')}};
+document.getElementById('ok').onclick=function(){try{d.close()}catch(e){d.removeAttribute('open')}};
+var cs=document.querySelectorAll('#chk input'),k='guia-chk';
+try{var s=JSON.parse(localStorage.getItem(k)||'[]');cs.forEach(function(c,i){c.checked=!!s[i]})}catch(e){}
+cs.forEach(function(c){c.onchange=function(){try{localStorage.setItem(k,JSON.stringify([].map.call(cs,function(x){return x.checked})))}catch(e){}}});
+})();
+</script>
+</body>
+</html>
